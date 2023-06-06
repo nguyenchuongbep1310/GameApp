@@ -1,6 +1,6 @@
 ﻿namespace GameApp
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             button4 = new Button();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button4
@@ -39,7 +44,7 @@
             button4.BackColor = SystemColors.ButtonFace;
             button4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(222, 428);
-            button4.Margin = new Padding(4, 4, 4, 4);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(258, 102);
             button4.TabIndex = 3;
@@ -51,7 +56,7 @@
             button1.BackColor = SystemColors.ButtonFace;
             button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(222, 316);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(258, 102);
             button1.TabIndex = 4;
@@ -63,7 +68,7 @@
             button2.BackColor = SystemColors.ButtonFace;
             button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(222, 206);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(258, 102);
             button2.TabIndex = 5;
@@ -76,7 +81,7 @@
             button3.BackColor = SystemColors.ButtonFace;
             button3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(222, 94);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(258, 102);
             button3.TabIndex = 6;
@@ -84,20 +89,46 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
-            // Form1
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.sound_speaker_icon_on_white_background_free_vector;
+            pictureBox1.Location = new Point(674, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 43);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(674, 644);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(50, 43);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // Home
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(736, 699);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(button4);
-            Margin = new Padding(4, 4, 4, 4);
-            Name = "Form1";
+            Margin = new Padding(4);
+            Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -106,5 +137,7 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

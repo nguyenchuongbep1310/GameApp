@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GameApp
 {
-    public partial class StartForm : Form
+    public partial class FruitTopic : Form
     {
         private string[] arrFruit = {
             "C:\\GameApp\\GameApp\\bin\\Debug\\Images\\fruit\\apple.jpg",
@@ -26,7 +26,7 @@ namespace GameApp
         };
         int questNo = 0;
         int score = 0;
-        public StartForm()
+        public FruitTopic()
         {
             InitializeComponent();
             questionPic.ImageLocation = string.Format(arrFruit[0]);
@@ -129,10 +129,17 @@ namespace GameApp
                 {
                     MessageBox.Show("Wrong answer!!! But you tried so hard and your score: " + score);
                 }
-                Form1 form = new Form1();
+                Home form = new Home();
                 form.Show();
                 this.Hide();
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.ShowDialog();
+            this.Hide();
         }
     }
 }

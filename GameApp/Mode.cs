@@ -19,7 +19,7 @@ namespace GameApp
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            Home form = new Home();
             form.Show();
             this.Hide();
         }

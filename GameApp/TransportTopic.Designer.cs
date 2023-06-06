@@ -36,6 +36,7 @@
             tbAnswer = new TextBox();
             button1 = new Button();
             questionPic = new PictureBox();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)questionPic).BeginInit();
             SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(215, 625);
+            label3.Location = new Point(282, 668);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(201, 45);
@@ -54,7 +55,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(364, 80);
+            label2.Location = new Point(967, 468);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(115, 45);
@@ -78,7 +79,7 @@
             // 
             lbScore.AutoSize = true;
             lbScore.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lbScore.Location = new Point(171, 80);
+            lbScore.Location = new Point(24, 486);
             lbScore.Margin = new Padding(4, 0, 4, 0);
             lbScore.Name = "lbScore";
             lbScore.Size = new Size(115, 45);
@@ -87,7 +88,7 @@
             // 
             // tbAnswer
             // 
-            tbAnswer.Location = new Point(449, 625);
+            tbAnswer.Location = new Point(516, 668);
             tbAnswer.Margin = new Padding(4);
             tbAnswer.Multiline = true;
             tbAnswer.Name = "tbAnswer";
@@ -97,7 +98,7 @@
             // button1
             // 
             button1.BackColor = SystemColors.Control;
-            button1.Location = new Point(449, 695);
+            button1.Location = new Point(516, 738);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(255, 70);
@@ -111,7 +112,7 @@
             questionPic.BackColor = SystemColors.Window;
             questionPic.BorderStyle = BorderStyle.FixedSingle;
             questionPic.Image = (Image)resources.GetObject("questionPic.Image");
-            questionPic.Location = new Point(215, 164);
+            questionPic.Location = new Point(282, 207);
             questionPic.Margin = new Padding(4);
             questionPic.Name = "questionPic";
             questionPic.Size = new Size(614, 420);
@@ -119,11 +120,25 @@
             questionPic.TabIndex = 7;
             questionPic.TabStop = false;
             // 
-            // MammalTopic
+            // button4
+            // 
+            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
+            button4.BackgroundImageLayout = ImageLayout.Stretch;
+            button4.Location = new Point(13, 13);
+            button4.Margin = new Padding(4);
+            button4.Name = "button4";
+            button4.Size = new Size(72, 74);
+            button4.TabIndex = 14;
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // TransportTopic
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1192, 844);
+            BackgroundImage = Properties.Resources._1;
+            ClientSize = new Size(1110, 839);
+            Controls.Add(button4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(button2);
@@ -131,7 +146,7 @@
             Controls.Add(tbAnswer);
             Controls.Add(button1);
             Controls.Add(questionPic);
-            Name = "MammalTopic";
+            Name = "TransportTopic";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MammalTopic";
             ((System.ComponentModel.ISupportInitialize)questionPic).EndInit();
@@ -148,5 +163,6 @@
         private TextBox tbAnswer;
         private Button button1;
         private PictureBox questionPic;
+        private Button button4;
     }
 }

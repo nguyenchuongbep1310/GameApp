@@ -135,5 +135,12 @@ namespace GameApp
                 this.Hide();
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.ShowDialog();
+            this.Hide();
+        }
     }
 }

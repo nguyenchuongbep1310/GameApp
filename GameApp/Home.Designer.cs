@@ -41,36 +41,39 @@
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.ButtonFace;
-            button4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(222, 428);
+            button4.BackColor = SystemColors.Info;
+            button4.Font = new Font("Tahoma", 14.1428576F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button4.ForeColor = Color.Coral;
+            button4.Location = new Point(412, 487);
             button4.Margin = new Padding(4);
             button4.Name = "button4";
-            button4.Size = new Size(258, 102);
+            button4.Size = new Size(268, 105);
             button4.TabIndex = 3;
             button4.Text = "Setting";
             button4.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ButtonFace;
-            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(222, 316);
+            button1.BackColor = SystemColors.Info;
+            button1.Font = new Font("Tahoma", 14.1428576F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button1.ForeColor = Color.Coral;
+            button1.Location = new Point(412, 360);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Size = new Size(258, 102);
+            button1.Size = new Size(258, 104);
             button1.TabIndex = 4;
             button1.Text = "Profile";
             button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.ButtonFace;
-            button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(222, 206);
+            button2.BackColor = SystemColors.Info;
+            button2.Font = new Font("Tahoma", 14.1428576F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button2.ForeColor = Color.Coral;
+            button2.Location = new Point(412, 247);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Size = new Size(258, 102);
+            button2.Size = new Size(258, 83);
             button2.TabIndex = 5;
             button2.Text = "Mode";
             button2.UseVisualStyleBackColor = false;
@@ -78,12 +81,13 @@
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.ButtonFace;
-            button3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(222, 94);
+            button3.BackColor = SystemColors.Info;
+            button3.Font = new Font("Tahoma", 14.1428576F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button3.ForeColor = Color.Coral;
+            button3.Location = new Point(412, 142);
             button3.Margin = new Padding(4);
             button3.Name = "button3";
-            button3.Size = new Size(258, 102);
+            button3.Size = new Size(258, 87);
             button3.TabIndex = 6;
             button3.Text = "Start";
             button3.UseVisualStyleBackColor = false;
@@ -116,6 +120,7 @@
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = Properties.Resources._4;
             ClientSize = new Size(736, 699);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);

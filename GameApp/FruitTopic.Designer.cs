@@ -47,7 +47,7 @@
             questionPic.BackColor = SystemColors.Window;
             questionPic.BorderStyle = BorderStyle.FixedSingle;
             questionPic.Image = (Image)resources.GetObject("questionPic.Image");
-            questionPic.Location = new Point(118, 129);
+            questionPic.Location = new Point(180, 126);
             questionPic.Margin = new Padding(4);
             questionPic.Name = "questionPic";
             questionPic.Size = new Size(614, 420);
@@ -58,7 +58,7 @@
             // button1
             // 
             button1.BackColor = SystemColors.Control;
-            button1.Location = new Point(352, 660);
+            button1.Location = new Point(414, 657);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(255, 70);
@@ -75,7 +75,7 @@
             // 
             // tbAnswer
             // 
-            tbAnswer.Location = new Point(352, 590);
+            tbAnswer.Location = new Point(414, 587);
             tbAnswer.Margin = new Padding(4);
             tbAnswer.Multiline = true;
             tbAnswer.Name = "tbAnswer";
@@ -86,7 +86,7 @@
             // 
             lbScore.AutoSize = true;
             lbScore.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lbScore.Location = new Point(109, 44);
+            lbScore.Location = new Point(22, 365);
             lbScore.Margin = new Padding(4, 0, 4, 0);
             lbScore.Name = "lbScore";
             lbScore.Size = new Size(115, 45);
@@ -110,7 +110,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(302, 44);
+            label2.Location = new Point(809, 365);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(115, 45);
@@ -121,7 +121,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(118, 590);
+            label3.Location = new Point(180, 587);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(201, 45);
@@ -145,7 +145,8 @@
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(936, 776);
+            BackgroundImage = Properties.Resources.v560_wan_07_summerfruit_1;
+            ClientSize = new Size(1020, 778);
             Controls.Add(button4);
             Controls.Add(label3);
             Controls.Add(label2);

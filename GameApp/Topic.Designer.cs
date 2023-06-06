@@ -44,7 +44,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Fruit;
-            pictureBox1.Location = new Point(1, 344);
+            pictureBox1.Location = new Point(24, 349);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(445, 388);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -54,7 +54,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(466, 344);
+            pictureBox2.Location = new Point(489, 349);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(470, 388);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -64,7 +64,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(967, 344);
+            pictureBox3.Location = new Point(990, 349);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(436, 388);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@
             // 
             button3.BackColor = SystemColors.ButtonFace;
             button3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(69, 184);
+            button3.Location = new Point(92, 189);
             button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(258, 102);
@@ -88,7 +88,7 @@
             // 
             button1.BackColor = SystemColors.ButtonFace;
             button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(543, 184);
+            button1.Location = new Point(602, 189);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(258, 102);
@@ -100,7 +100,7 @@
             // 
             button2.BackColor = SystemColors.ButtonFace;
             button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(1036, 184);
+            button2.Location = new Point(1059, 189);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(258, 102);
@@ -125,6 +125,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1439, 760);
             Controls.Add(button4);
             Controls.Add(button2);

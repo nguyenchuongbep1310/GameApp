@@ -42,5 +42,12 @@ namespace GameApp
             home.ShowDialog();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AnimalTopic animalTopic = new AnimalTopic();
+            animalTopic.ShowDialog();
+            this.Hide();
+        }
     }
 }

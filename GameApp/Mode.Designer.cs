@@ -48,7 +48,7 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(944, 674);
             panel1.TabIndex = 3;
@@ -58,7 +58,7 @@
             button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
             button4.BackgroundImageLayout = ImageLayout.Stretch;
             button4.Location = new Point(854, 18);
-            button4.Margin = new Padding(4, 4, 4, 4);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(72, 74);
             button4.TabIndex = 6;
@@ -71,12 +71,13 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(320, 450);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(336, 136);
             button3.TabIndex = 5;
-            button3.Text = "Not hard";
+            button3.Text = "Hard";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -84,12 +85,13 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(320, 252);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(336, 136);
             button2.TabIndex = 4;
             button2.Text = "Medium";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -97,21 +99,23 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(320, 42);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(336, 136);
             button1.TabIndex = 3;
             button1.Text = "Super Easy";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(944, 674);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -121,7 +125,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(944, 674);
             Controls.Add(panel1);
-            Margin = new Padding(4, 4, 4, 4);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Mode";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Mode";

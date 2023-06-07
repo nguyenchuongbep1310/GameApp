@@ -36,7 +36,6 @@
             tbAnswer = new TextBox();
             lbScore = new Label();
             button2 = new Button();
-            label2 = new Label();
             label3 = new Label();
             button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)questionPic).BeginInit();
@@ -86,7 +85,7 @@
             // 
             lbScore.AutoSize = true;
             lbScore.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lbScore.Location = new Point(22, 365);
+            lbScore.Location = new Point(839, 317);
             lbScore.Margin = new Padding(4, 0, 4, 0);
             lbScore.Name = "lbScore";
             lbScore.Size = new Size(115, 45);
@@ -105,17 +104,6 @@
             button2.Size = new Size(54, 48);
             button2.TabIndex = 4;
             button2.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(809, 365);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(115, 45);
-            label2.TabIndex = 5;
-            label2.Text = "Level: ";
             // 
             // label3
             // 
@@ -149,7 +137,6 @@
             ClientSize = new Size(1020, 778);
             Controls.Add(button4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(lbScore);
             Controls.Add(tbAnswer);
@@ -172,7 +159,6 @@
         private TextBox tbAnswer;
         private Label lbScore;
         private Button button2;
-        private Label label2;
         private Label label3;
         private Button button4;
     }

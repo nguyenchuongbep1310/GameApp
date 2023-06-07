@@ -95,6 +95,7 @@
             button1.TabIndex = 8;
             button1.Text = "Mammals";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -134,6 +135,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "Topic";
             StartPosition = FormStartPosition.CenterScreen;

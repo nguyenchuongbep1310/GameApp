@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            button4 = new Button();
-            button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
@@ -39,38 +37,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // button4
-            // 
-            button4.BackColor = SystemColors.Info;
-            button4.Font = new Font("Tahoma", 14.1428576F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button4.ForeColor = Color.Coral;
-            button4.Location = new Point(412, 487);
-            button4.Margin = new Padding(4);
-            button4.Name = "button4";
-            button4.Size = new Size(268, 105);
-            button4.TabIndex = 3;
-            button4.Text = "Setting";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.Info;
-            button1.Font = new Font("Tahoma", 14.1428576F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button1.ForeColor = Color.Coral;
-            button1.Location = new Point(412, 360);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(258, 104);
-            button1.TabIndex = 4;
-            button1.Text = "Profile";
-            button1.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             button2.BackColor = SystemColors.Info;
             button2.Font = new Font("Tahoma", 14.1428576F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             button2.ForeColor = Color.Coral;
-            button2.Location = new Point(412, 247);
+            button2.Location = new Point(421, 359);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(258, 83);
@@ -126,8 +98,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(button4);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
@@ -138,8 +109,6 @@
         }
 
         #endregion
-        private Button button4;
-        private Button button1;
         private Button button2;
         private Button button3;
         private PictureBox pictureBox1;
